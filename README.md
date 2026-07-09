@@ -118,8 +118,9 @@ Feste Deploy-Zielwerte in diesem Projekt:
 
 Empfohlen für Railway:
 
-- GitHub-Repository mit dem Railway-Service verknüpfen
-- in Railway `Wait for CI` aktivieren, damit Deploys erst nach erfolgreicher GitHub-CI starten
+- keine Railway-Source-Autodeploys verwenden, solange Railway den Repo-Root-Pfad falsch interpretiert
+- Deploys ausschließlich über die GitHub Action `Deploy to Railway` ausführen
+- `Wait for CI` ist in diesem Setup funktional durch die GitHub-Action-Qualitätsstufen vor dem Deploy abgedeckt
 - nur `main` als produktionsnahen Deploy-Branch verwenden
 
 ## Wichtige Sicherheitsregeln
